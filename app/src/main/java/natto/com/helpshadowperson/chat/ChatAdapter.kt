@@ -11,7 +11,7 @@ import natto.com.helpshadowperson.R
 class ChatAdapter(context: Context) : ArrayAdapter<ChatMessage>(context,
     R.layout.layout_chat_me
 ) {
-    private val list: ArrayList<ChatMessage> = ArrayList()
+    private var list: ArrayList<ChatMessage> = ArrayList()
     private val inflator: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
@@ -22,7 +22,7 @@ class ChatAdapter(context: Context) : ArrayAdapter<ChatMessage>(context,
 //        if (convertView != null) {
 //            view = convertView
 //        } else {
-        if (item.isMe) {
+        if (item.sender==1) {
             view = inflator.inflate(R.layout.layout_chat_me, null)
         } else {
             view = inflator.inflate(R.layout.layout_chat_other, null)
@@ -35,7 +35,7 @@ class ChatAdapter(context: Context) : ArrayAdapter<ChatMessage>(context,
         //}
 
         val messageView = view.findViewById<TextView>(R.id.message_text)
-        messageView.text = item.message
+        messageView.text = item.messages
 
         return view
     }
@@ -46,5 +46,9 @@ class ChatAdapter(context: Context) : ArrayAdapter<ChatMessage>(context,
 
     fun messageAdd(item: ChatMessage) {
         list.add(item)
+    }
+
+    fun setList(list:ArrayList<ChatMessage>){
+        this.list=list
     }
 }

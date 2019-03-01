@@ -37,7 +37,7 @@ class FBFcmListenerService : FirebaseMessagingService() {
 
         val defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE)
         val notificationBuilder = NotificationCompat.Builder(this)
-            .setSmallIcon(R.mipmap.ic_launcher)
+            .setSmallIcon(R.drawable.ic_message_app_foreground)
             .setContentTitle("Push通知のタイトル")
             .setSubText("Push通知のサブタイトル")
             .setAutoCancel(true)
