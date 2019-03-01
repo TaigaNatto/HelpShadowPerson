@@ -23,14 +23,16 @@ class ChatAdapter(context: Context) : ArrayAdapter<ChatMessage>(context, R.layou
             view = inflator.inflate(R.layout.layout_chat_me, null)
         } else {
             view = inflator.inflate(R.layout.layout_chat_other, null)
+
+            val nameView = view.findViewById<TextView>(R.id.name_text)
+            nameView.text = item.name
+//            val imgProfile = view.findViewById<CircleImageView>(R.id.message_sender_img)
+//            imgProfile.text = item.newestDate
         }
         //}
 
         val messageView = view.findViewById<TextView>(R.id.message_text)
         messageView.text = item.message
-
-//        val imgProfile = view.findViewById<CircleImageView>(R.id.message_sender_img)
-//        imgProfile.text = item.newestDate
 
         return view
     }

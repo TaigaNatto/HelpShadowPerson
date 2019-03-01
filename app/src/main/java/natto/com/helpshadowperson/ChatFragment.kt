@@ -20,11 +20,11 @@ class ChatFragment : Fragment() {
 
         context?.let {
             adapter = ChatAdapter(it)
-//            adapter.messageAdd(ChatMessage(true, "", "しりとりしよう！", "", ""))
-//            for (i in 0..20) {
-//                adapter.messageAdd(ChatMessage(false, "", "トンボ", "", ""))
-//                adapter.messageAdd(ChatMessage(true, "", "ボルト", "", ""))
-//            }
+            adapter.messageAdd(ChatMessage(true, "", "しりとりしよう！", "", ""))
+            for (i in 0..20) {
+                adapter.messageAdd(ChatMessage(false, "さいとう", "トンボ", "", ""))
+                adapter.messageAdd(ChatMessage(true, "", "ボルト", "", ""))
+            }
             binding.listChat.adapter = adapter
         }
         binding.listChat.setSelection(adapter.count)
