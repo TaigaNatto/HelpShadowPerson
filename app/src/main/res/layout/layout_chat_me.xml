@@ -13,13 +13,14 @@
             android:background="@drawable/bg_chat_me"
             android:textColor="#ffffff"
             android:padding="8dp"
+            android:layout_marginEnd="16dp"
             android:maxWidth="300dp"
-            android:text="こんにちは！ああああああああああああああああああああああ"
+            android:text="こんに"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.95"/>
+            app:layout_constraintHorizontal_bias="1.0"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/message_sender_img"
