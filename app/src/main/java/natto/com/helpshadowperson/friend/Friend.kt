@@ -1,4 +1,4 @@
-package natto.com.helpshadowperson
+package natto.com.helpshadowperson.friend
 
 class Friend(
     val name: String,

@@ -47,4 +47,10 @@ dependencies {
     // recycler
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'com.android.support:cardview-v7:28.0.0'
+
+    // firebase
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation "com.google.firebase:firebase-messaging:17.4.0"
 }
+
+apply plugin: 'com.google.gms.google-services'

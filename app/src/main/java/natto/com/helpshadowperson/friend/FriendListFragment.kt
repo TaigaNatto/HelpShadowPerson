@@ -1,4 +1,4 @@
-package natto.com.helpshadowperson
+package natto.com.helpshadowperson.friend
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.AdapterView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import natto.com.helpshadowperson.R
 import natto.com.helpshadowperson.databinding.FragmentFriendListBinding
 
 
@@ -21,7 +22,8 @@ class FriendListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_friend_list, container, false)
+        binding = DataBindingUtil.inflate(inflater,
+            R.layout.fragment_friend_list, container, false)
 
         context?.let {
             adapter = FriendsAdapter(it)

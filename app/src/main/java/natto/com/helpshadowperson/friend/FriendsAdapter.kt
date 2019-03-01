@@ -1,4 +1,4 @@
-package natto.com.helpshadowperson
+package natto.com.helpshadowperson.friend
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,8 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
+import natto.com.helpshadowperson.R
 
-class FriendsAdapter(context: Context) : ArrayAdapter<Friend>(context, R.layout.layout_list_card) {
+class FriendsAdapter(context: Context) : ArrayAdapter<Friend>(context,
+    R.layout.layout_list_card
+) {
     private val list: ArrayList<Friend> = ArrayList()
     private val inflator: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 

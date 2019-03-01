@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "896009639346",
+    "firebase_url": "https://helpshadowperson.firebaseio.com",
+    "project_id": "helpshadowperson",
+    "storage_bucket": "helpshadowperson.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896009639346:android:cfb4f822faafa637",
+        "android_client_info": {
+          "package_name": "natto.com.helpshadowperson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896009639346-2vnmj71urdtjrtvpin2j2fg2no7lcf5s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHEPf2_S3WThyxj-FPH2dik_jfKVphdNQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

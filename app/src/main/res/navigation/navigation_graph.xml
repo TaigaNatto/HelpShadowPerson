@@ -6,7 +6,7 @@
 
     <fragment
             android:id="@+id/friendListFragment"
-            android:name="natto.com.helpshadowperson.FriendListFragment"
+            android:name="natto.com.helpshadowperson.friend.FriendListFragment"
             android:label="friendListFragment"
             tools:layout="@layout/fragment_friend_list">
         <action android:id="@+id/action_friendListFragment_to_chatFragment" app:destination="@id/chatFragment"/>
@@ -14,7 +14,7 @@
 
     <fragment
             android:id="@+id/chatFragment"
-            android:name="natto.com.helpshadowperson.ChatFragment"
+            android:name="natto.com.helpshadowperson.chat.ChatFragment"
             android:label="chatFragment"
             tools:layout="@layout/fragment_chat">
     </fragment>

@@ -1,4 +1,4 @@
-package natto.com.helpshadowperson
+package natto.com.helpshadowperson.chat
 
 class ChatMessage(
     val isMe: Boolean,

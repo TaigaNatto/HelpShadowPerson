@@ -1,4 +1,4 @@
-package natto.com.helpshadowperson
+package natto.com.helpshadowperson.chat
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,8 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
+import natto.com.helpshadowperson.R
 
-class ChatAdapter(context: Context) : ArrayAdapter<ChatMessage>(context, R.layout.layout_chat_me) {
+class ChatAdapter(context: Context) : ArrayAdapter<ChatMessage>(context,
+    R.layout.layout_chat_me
+) {
     private val list: ArrayList<ChatMessage> = ArrayList()
     private val inflator: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
