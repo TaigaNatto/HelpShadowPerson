@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ffffff"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@color/color_green"
+            app:layout_constraintTop_toTopOf="@id/img_profile"
+            app:layout_constraintBottom_toBottomOf="@id/img_profile"
+            app:layout_constraintStart_toStartOf="@id/img_profile"
+            app:layout_constraintEnd_toEndOf="@id/img_profile"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="1.0"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ffffff"/>
+
+    <TextView
+            android:id="@+id/name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="#000000"
+            android:layout_marginStart="8dp"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/sub_chat"
+            app:layout_constraintStart_toEndOf="@id/img_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+    <TextView
+            android:id="@+id/sub_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="おはよう！あああああああああああああああああああ"
+            android:maxLines="1"
+            app:layout_constraintTop_toBottomOf="@id/name_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/name_profile"
+            app:layout_constraintEnd_toStartOf="@id/date_chat"
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+    <TextView
+            android:id="@+id/date_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="午後1:00"
+            android:textColor="#000000"
+            app:layout_constraintTop_toTopOf="@id/name_profile"
+            app:layout_constraintBottom_toBottomOf="@id/name_profile"
+            app:layout_constraintStart_toEndOf="@id/img_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="1.0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

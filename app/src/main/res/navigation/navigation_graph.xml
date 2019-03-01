@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation_graph"
+            app:startDestination="@id/friendListFragment">
+
+    <fragment
+            android:id="@+id/friendListFragment"
+            android:name="natto.com.helpshadowperson.FriendListFragment"
+            android:label="friendListFragment"
+            tools:layout="@layout/fragment_friend_list">
+        <action android:id="@+id/action_friendListFragment_to_chatFragment" app:destination="@id/chatFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/chatFragment"
+            android:name="natto.com.helpshadowperson.ChatFragment"
+            android:label="chatFragment"
+            tools:layout="@layout/fragment_chat">
+    </fragment>
+
+
+</navigation>
